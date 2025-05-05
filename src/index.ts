@@ -21,7 +21,7 @@ const small = 1;
 const medium = 2;
 const large = 3;
 
-enum Size {
+const enum Size {
   small,
   medium,
   large,
@@ -39,8 +39,17 @@ enum Size3 {
   Large,
 }
 
-enum Size4 {
+const enum Size4 {
   Small = "s",
   Medium = "m",
   Large = "l",
+}
+
+let mySize: Size = Size.large;
+console.log(mySize); // 2
+
+// (variable it takes): return type
+function calculateTax(income: number): number {
+  if (income < 50000) return income * 1.2;
+  else return 0; //undefined
 }
