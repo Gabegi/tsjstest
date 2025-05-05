@@ -16,3 +16,31 @@ mytype = "hello";
 let numbers: number[] = [];
 
 let user: [number, string] = [1, "Bob"];
+
+const small = 1;
+const medium = 2;
+const large = 3;
+
+enum Size {
+  small,
+  medium,
+  large,
+}
+
+enum Size2 {
+  Small,
+  Medium,
+  Large,
+}
+
+enum Size3 {
+  Small = 2,
+  Medium,
+  Large,
+}
+
+enum Size4 {
+  Small = "s",
+  Medium = "m",
+  Large = "l",
+}
